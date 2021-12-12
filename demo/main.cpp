@@ -1,5 +1,9 @@
-#include <example.hpp>
+#include <dirwalker.hpp>
+
+using namespace std;
 
 int main() {
-  example();
+  DirectoryWalker directoryWalker;
+  directoryWalker.read_directory("../misc/ftp", false);
+  directoryWalker.output_statistics();
 }
